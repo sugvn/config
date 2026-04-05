@@ -6,4 +6,9 @@
 !/zathura/**
 !/sway/
 !/sway/**
-
+!/fish/
+!/fish/**
+!/i3staus/
+!/i3staus/**
+!/tmux/
+!/tmux/**
