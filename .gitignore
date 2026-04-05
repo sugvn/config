@@ -1,5 +1,6 @@
 /*
 !/.gitignore
+!/kitty/
 !/kitty/**
 !/zathura/**
 !/sway/**
