@@ -9,8 +9,7 @@ set $menu ~/rofi/files/launchers/type-3/launcher.sh
 set $fileManager thunar
 set $browser firefox
 
-# font pango:Iosevka Nerd Font Mono 10 
-font pango:monospace 9
+font pango:JetBrainsMono Nerd Font Mono 10
 input * repeat_delay 200
 input * repeat_rate 30
 
@@ -22,14 +21,9 @@ exec swaync
 exec swayosd-server
 exec swayidle -w \
   timeout 300 'swaymsg "output * dpms off"' \
+  timeout 500 'systemctl suspend' \
   resume 'swaymsg "output * dpms on"' \
   before-sleep 'swaylock -f -c 000000'
-#exec swayidle -w \
-#timeout 300 'swaylock -f -c 000000' \
-#timeout 500 'swaymsg "output * dpms off"' \
-#timeout 800 'systemctl suspend' \
-#resume 'swaymsg "output * dpms on"' \
-#before-sleep 'swaylock -f -c 000000'
 
 # wallpaper
 output * bg ~/Pictures/wall/forest.jpeg fill
@@ -132,12 +126,7 @@ bar {
     position bottom
     status_command i3status 
     height 15
-    font Iosevka Nerd Font Mono 10 
-    # colors {
-    #     statusline #ffffff
-    #     background #323232
-    #     inactive_workspace #32323200 #32323200 #5c5c5c
-    # }
+    font JetBrainsMono Nerd Font Mono 10 
 }
 
 include /etc/sway/config.d/*
