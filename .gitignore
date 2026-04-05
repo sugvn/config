@@ -1,6 +1,6 @@
 *
 !.gitignore
-!kitty/
-!zathura/
-!sway/
+!kitty/**
+!zathura/**
+!sway/**
 
