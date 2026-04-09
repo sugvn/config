@@ -10,6 +10,8 @@ set $fileManager thunar
 set $browser firefox
 
 font pango:JetBrainsMono Nerd Font Mono 10
+titlebar_border_thickness 0
+titlebar_padding 0
 input * repeat_delay 200
 input * repeat_rate 30
 
@@ -21,7 +23,6 @@ exec swaync
 exec swayosd-server
 exec swayidle -w \
   timeout 300 'swaymsg "output * dpms off"' \
-  timeout 500 'systemctl suspend' \
   resume 'swaymsg "output * dpms on"' \
   before-sleep 'swaylock -f -c 000000'
 
@@ -92,6 +93,7 @@ bindsym $mod+b splith
 bindsym $mod+v splitv
 bindsym $mod+s layout toggle split
 bindsym $mod+w exec swaymsg layout toggle split tabbed
+bindsym $mod+n bar mode toggle
 bindsym $mod+f fullscreen
 bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
