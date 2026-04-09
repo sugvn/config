@@ -43,7 +43,7 @@ bindgesture swipe:up exec pkill rofi || rofi -show drun
 bindsym --border button3 kill
 
 bindsym $mod+Backspace exec swaylock -f -c 000000
-bindsym $mod+g exec killall gammastep || gammastep -O 5500
+bindsym $mod+g exec killall gammastep || gammastep -O 5000
 bindsym $mod+Return exec $term
 bindsym $mod+e exec $fileManager
 bindsym $mod+q kill
