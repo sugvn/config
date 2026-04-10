@@ -27,7 +27,7 @@ exec swayidle -w \
   before-sleep 'swaylock -f -c 000000'
 
 # wallpaper
-output * bg ~/Pictures/wall/forest.jpeg fill
+output * bg ~/Pictures/wall/flower-lake.jpg fill
 input type:touchpad {
     dwt enabled
     tap enabled
